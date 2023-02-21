@@ -1,9 +1,31 @@
 import React from 'react'
+import styled from 'styled-components'
+import {Button} from '../Components/Button'
 
-const Results = () => {
+const Title = styled.h1`
+    margin-top: 4em;
+    font-size: 48px;
+`;
+
+const Points = styled.p`
+    font-size: 24px;
+    margin-bottom: 3em;
+`;
+
+
+
+const Results = ({pts}) => {
+
+
+    const refreshPage = () => window.location.reload();
   return (
-    <div>Results</div>
+    <>
+        <Title>Game Over</Title>
+            <Points>You did {pts} out of 5!</Points>
+            <Button onClick={refreshPage}>Retry</Button>
+
+    </>
   )
 }
 
-export default Results
+export {Results}

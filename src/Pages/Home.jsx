@@ -34,7 +34,7 @@ const Home = () => {
       setDifficulty(data.difficulty);
       setNumQuestions(data.numQuestions)
     }
-    
+
   }, []);
 
   useEffect(()=>{
@@ -57,9 +57,9 @@ const Home = () => {
             Category:
             <select value={category} onChange={(event) => setCategory(event.target.value)}>
             <option value="">--Please choose a category--</option>
-            <option value="general-knowledge">General Knowledge</option>
-            <option value="sports">Sports</option>
-            <option value="geography">Geography</option>
+            <option value="9">General Knowledge</option>
+            <option value="21">Sports</option>
+            <option value="22">Geography</option>
             </select>
         </label>
 

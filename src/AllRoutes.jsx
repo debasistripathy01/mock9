@@ -3,7 +3,7 @@ import React from 'react'
 import {Routes, Route} from "react-router-dom";
 import Home from './Pages/Home';
 import Quiz from './Pages/Quiz';
-import Results from './Pages/Results';
+import {Results} from './Pages/Results';
 import Dashboard from './Pages/Dashboard';
 
 const AllRoutes = () => {
